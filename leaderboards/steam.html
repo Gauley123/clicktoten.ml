@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="/css/style.css?version=3" />
+    <title>click to ten</title>
+
+    <meta property="og:title" content="click to ten" />
+    <meta property="og:site_name" content="click to ten" />
+    <meta property="og:url" content="https://clicktoten.ml" />
+    <meta property="og:description" content="site description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/media/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="clcik to ten" />
+    <meta name="twitter:image" content="/media/logo.png" />
+    <meta name="twitter:url" content="https://clicktoten.ml" />
+    <link rel="preload" as="image" href="/media/logo.png" />
+    <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#a3a3a3" />
+  </head>
+
+  <body>
+    <div>
+      <br />
+      <h1>speedrun</h1>
+      <h2>steam</h2>
+      <br />
+      <p><a href="/index.html">main page</a></p>
+      <br />
+      <p>
+        <a href="//store.steampowered.com/app/1910580/click_to_ten/"
+          >get game</a
+        >
+      </p>
+      <p>
+        <a href="/leaderboards/steam.html">steam</a>
+        <a href="/leaderboards/mobile.html">mobile</a>
+        <a href="/leaderboards/web.html">web</a>
+      </p>
+      <br />
+      <p>
+        1 | aloofpepsi | 0.21 seconds |
+        <a href="/media/steam/AloofPepsi_0.21.mp4">recording</a>
+      </p>
+      <p>
+        2 | tidalbaum | 0.25 seconds |
+        <a href="//www.youtube.com/watch?v=yvuAzfZ5QY8">recording</a>
+      </p>
+      <p>
+        3 | gauley | 0.38 seconds |
+        <a href="/media/steam/Gauley_0.38.mp4">recording</a>
+      </p>
+      <p>
+        4 | marilo | 0.90 seconds |
+        <a href="/media/steam/Marilo_0.90.mp4">recording</a>
+      </p>
+      <p>
+        5 | kittenscoolpool | 0.93 seconds |
+        <a href="/media/steam/KittensCoolPool_0.93.mp4">recording</a>
+      </p>
+      <p>
+        6 | funl | 1.55 seconds |
+        <a href="/media/steam/funl_1.55.mp4">recording</a>
+      </p>
+      <p>
+        7 | jsap | 1.64 | <a href="/media/steam/jsap_1.64.mp4">recording</a>
+      </p>
+      <p>
+        8 | starchyplanet37 | 1.66 seconds |
+        <a href="/media/steam/StarchyPlanet37_1.66.mp4">recording</a>
+      </p>
+      <p>
+        9 | snowbloxian | 1.73 seconds |
+        <a href="/media/steam/snowbloxian_1.73.mp4">recording</a>
+      </p>
+
+      <p>
+        10 | nobody | n/a seconds | <a href="#submit" id="open-popup">submit</a>
+      </p>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>submit</h2>
+          <br />
+          <h3>rules</h3>
+          <p>autoclicker modding and cheat engine is a bad</p>
+          <br />
+          <p>there is an autosplitter for click to ten</p>
+          <p>start your timer on first click</p>
+          <p>end timer when the game closes</p>
+          <br />
+          <h3>submit</h3>
+          <p>
+            submit in the official click to ten
+            <a href="//discord.gg/3bcJzjAqQ2">discord server</a>
+            <br />#speedrun-submission channel
+          </p>
+          <p>
+            it is not required but I would appreciate if you upload the video
+            file instead of posting a YouTube or whatever link.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("modal");
+      var btn = document.getElementById("open-popup");
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

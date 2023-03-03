@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="/css/game.css?version=3" />
+    <title>click to ten</title>
+
+    <meta property="og:title" content="click to ten" />
+    <meta property="og:site_name" content="click to ten" />
+    <meta property="og:url" content="https://clicktoten.ml" />
+    <meta property="og:description" content="site description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/media/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="clcik to ten" />
+    <meta name="twitter:image" content="/media/logo.png" />
+    <meta name="twitter:url" content="https://clicktoten.ml" />
+    <link rel="preload" as="image" href="/media/logo.png" />
+    <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#a3a3a3" />
+
+  </head>
+  <script>
+    
+    let clicks = 0;
+
+    document.onmousedown = click;
+
+    function click(event) {
+      if (event.button == 0) {
+        if (clicks == 0) {
+          firstclick = Date.now();
+          console.log("First click " + firstclick);
+        }
+
+        if (clicks !== 10) {
+          clicks++;
+          document.getElementById("clickcount").innerHTML = clicks;
+          console.log(clicks);
+
+          if (clicks == 10) {
+            lastclick = Date.now();
+            timer = lastclick - firstclick;
+            timer = timer / 1000;
+            timer = timer.toFixed(2);
+            console.log("First click " + firstclick);
+            console.log("Last click " + lastclick);
+            console.log("Time taken " + timer);
+
+            document.getElementById("playagaintext").classList.remove("invisible");
+            document.getElementById("playagaintext").classList.add("fadeIn");
+            document.getElementById("timer").classList.remove("invisible");
+            document.getElementById("timer").classList.add("fadeIn");
+            document.getElementById("timer").textContent = timer + " seconds";
+          }
+        }
+      }
+    }
+  </script>
+
+  <body class="unselectable">
+    <div>
+      <p>
+        <span id="clickcount">0</span>
+      </p>
+    </div>
+    <div class="timer">
+      <h1>
+        <span id="timer" class="invisible">0</span>
+        <br>
+        <span id="playagaintext" class="invisible"><a href="">play again</a></span>
+      </h1>
+    </div>
+  </body>
+</html>

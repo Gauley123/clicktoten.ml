@@ -1,0 +1,57 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+body {
+  font-family: "Arial";
+  font-size: 20px;
+  background: #a3a3a3;
+  text-align: center;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

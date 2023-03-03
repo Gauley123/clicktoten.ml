@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="/css/style.css?version=3" />
+    <title>click to ten</title>
+
+    <meta property="og:title" content="click to ten" />
+    <meta property="og:site_name" content="click to ten" />
+    <meta property="og:url" content="https://clicktoten.ml" />
+    <meta property="og:description" content="site description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/media/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="clcik to ten" />
+    <meta name="twitter:image" content="/media/logo.png" />
+    <meta name="twitter:url" content="https://clicktoten.ml" />
+    <link rel="preload" as="image" href="/media/logo.png" />
+    <link rel="shortcut icon" href="/media/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#a3a3a3" />
+  </head>
+
+  <body>
+    <div>
+      <br />
+      <h1>speedrun</h1>
+      <h2>mobile</h2>
+      <br />
+      <p><a href="/index.html">main page</a></p>
+      <br />
+      <p>
+        <a
+          href="//play.google.com/store/apps/details?id=com.bytespacegames.clicktotenmobile"
+          >get game</a
+        >
+      </p>
+      <p>
+        <a href="/leaderboards/steam.html">steam</a>
+        <a href="/leaderboards/mobile.html">mobile</a>
+        <a href="/leaderboards/web.html">web</a>
+      </p>
+      <br />
+      <p>
+        1 | gauley | 0 seconds | 32 clicks |
+        <a href="/media/mobile/Gauley_0_32.mp4">recording</a>
+      </p>
+      <p>
+        2 | nobody | n/a seconds | <a href="#submit" id="open-popup">submit</a>
+      </p>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>submit</h2>
+          <br />
+          <h3>rules</h3>
+          <p>auto tappers are not allowed</p>
+          <br />
+          <p>Start your timer on first tap</p>
+          <p>end timer when the game closes.</p>
+          <p>
+            if you use the "click before the game starts" bug (??) you will be
+            placed on the amount of clicks
+          </p>
+          <br />
+          <h3>submit</h3>
+          <p>
+            submit in the official click to ten
+            <a href="//discord.gg/3bcJzjAqQ2">discord server</a>
+            <br />#speedrun-submission channel
+          </p>
+          <p>
+            it is not required but I would appreciate if you upload the video
+            file instead of posting a YouTube or whatever link.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("modal");
+      var btn = document.getElementById("open-popup");
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
